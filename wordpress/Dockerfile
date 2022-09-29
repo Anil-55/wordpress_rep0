@@ -1,2 +1,2 @@
-FROM wordpress:php8.1-apache
+FROM  php:7.4-apache
 COPY . /var/www/html
