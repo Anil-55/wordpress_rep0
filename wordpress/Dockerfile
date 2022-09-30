@@ -1,4 +1,6 @@
 FROM  ubuntu
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y tzdata
 RUN  apt update -y
 RUN  apt install apache2 -y
 RUN  apt install php8.1 -y
